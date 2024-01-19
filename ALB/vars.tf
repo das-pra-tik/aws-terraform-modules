@@ -1,0 +1,11 @@
+variable "vpc-id" { type = string }
+variable "alb_sec_groups" { type = list(string) }
+variable "alb_public_subnets" { type = list(string) }
+variable "alb_target_ids" { type = list(string) }
+variable "alb_name" { type = string }
+variable "alb_tg_name" { type = string }
+variable "certificate_arn" { type = string }
+variable "root_domain_name" { type = string }
+variable "domain_name" { type = string }
+variable "identifier" { type = string }
+variable "weight" { type = number }
